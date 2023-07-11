@@ -20,13 +20,16 @@
 							"const response = pm.response.json();\r",
 							"\r",
 							"console.log(response.status);\r",
-							""
+							"console.log(response['status']);\r",
+							"\r",
+							"pm.test(\"Status should be OK\", () => {pm.expect(1).to.eql(1);});\r",
+							"pm.test(\"Response status should be FAIL\", () => {pm.expect(response.status).to.eql(\"NOT OK\");});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "4c276c22-5eda-4339-865c-93c34aa80419",
+			"id": "4c276c22-5eda-4339-865c-93c34aa80419",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -39,7 +42,7 @@
 		},
 		{
 			"name": "Request_2_books",
-			"_postman_id": "a74d5c98-f42a-4aa9-af8c-147fac5c0d95",
+			"id": "a74d5c98-f42a-4aa9-af8c-147fac5c0d95",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -52,7 +55,7 @@
 		},
 		{
 			"name": "Request_3_single book",
-			"_postman_id": "d93512fc-af32-4708-a7a8-34387264bc77",
+			"id": "d93512fc-af32-4708-a7a8-34387264bc77",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -71,8 +74,7 @@
 					"variable": [
 						{
 							"key": "bookId",
-							"value": "1",
-							"type": "string"
+							"value": "1"
 						}
 					]
 				}
@@ -81,7 +83,7 @@
 		},
 		{
 			"name": "Request_4_order-book_POST",
-			"_postman_id": "519a34e5-f999-4fed-8df4-55ddf969376a",
+			"id": "519a34e5-f999-4fed-8df4-55ddf969376a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -127,7 +129,7 @@
 		},
 		{
 			"name": "Request_5_register API client",
-			"_postman_id": "7b23a4c2-a8b2-479c-b54e-6aac3d466c81",
+			"id": "7b23a4c2-a8b2-479c-b54e-6aac3d466c81",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -149,7 +151,7 @@
 		},
 		{
 			"name": "Request_6_GET all book orders",
-			"_postman_id": "291a9579-c9c5-43ce-8014-e208d98a30ba",
+			"id": "291a9579-c9c5-43ce-8014-e208d98a30ba",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -195,7 +197,7 @@
 		},
 		{
 			"name": "Request_7_GET one book order",
-			"_postman_id": "f4c1cff1-7590-4b08-b664-6b0198a0aa99",
+			"id": "f4c1cff1-7590-4b08-b664-6b0198a0aa99",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -229,8 +231,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "ZmFf1XvUcb5WCrQwOhNRC",
-							"type": "string"
+							"value": "ZmFf1XvUcb5WCrQwOhNRC"
 						}
 					]
 				}
@@ -239,7 +240,7 @@
 		},
 		{
 			"name": "Request_8_update order_PATCH",
-			"_postman_id": "3dd4a3dd-fc74-420c-b160-c135635d3254",
+			"id": "3dd4a3dd-fc74-420c-b160-c135635d3254",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -273,8 +274,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "ZmFf1XvUcb5WCrQwOhNRC",
-							"type": "string"
+							"value": "ZmFf1XvUcb5WCrQwOhNRC"
 						}
 					]
 				}
@@ -283,7 +283,7 @@
 		},
 		{
 			"name": "Request_9_delete order",
-			"_postman_id": "77c1ee49-01e6-4ce9-82b5-abd7f17a6c9d",
+			"id": "77c1ee49-01e6-4ce9-82b5-abd7f17a6c9d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -317,8 +317,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "rQ7q4_aUte4tNwXkBCZHN",
-							"type": "string"
+							"value": "rQ7q4_aUte4tNwXkBCZHN"
 						}
 					]
 				}
@@ -350,13 +349,12 @@
 	],
 	"variable": [
 		{
-			"id": "df72e47e-9e31-49c5-8db8-938a3d18c76a",
+			"id": "74551646-c3a7-4ef8-9230-fb66cb24aeb4",
 			"key": "baseUrl",
-			"value": "https://simple-books-api.glitch.me",
-			"type": "string"
+			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "bdabc2bd-0bc8-4f80-a994-f90fa4e9c572",
+			"id": "f48e9ef3-4d18-4c98-9cf4-4ceb0e333df1",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
