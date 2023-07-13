@@ -23,7 +23,9 @@
 							"console.log(response['status']);\r",
 							"\r",
 							"pm.test(\"Status should be OK\", () => {pm.expect(1).to.eql(1);});\r",
-							"pm.test(\"Response status should be FAIL\", () => {pm.expect(response.status).to.eql(\"NOT OK\");});"
+							"pm.test(\"Response status should be FAIL\", () => {pm.expect(response.status).to.eql(\"NOT OK\");});\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -363,12 +365,12 @@
 	],
 	"variable": [
 		{
-			"id": "f01f483f-917f-4696-8678-75941df56235",
+			"id": "e997cd08-5a2e-4660-bcb2-975b438d6e00",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "8d16527b-4880-41b9-9da1-d00cead35e91",
+			"id": "8e08b841-f9e9-46b2-99e1-aa480740a775",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
