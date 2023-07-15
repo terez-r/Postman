@@ -273,7 +273,22 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/orders/VRAz95M1_LPlDhWfMTv2A"
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "{{orderId}}"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -408,12 +423,12 @@
 	],
 	"variable": [
 		{
-			"id": "f76b8b30-3229-490b-9f3a-afe7803e5d9b",
+			"id": "1940d223-5fb9-4332-9e7c-6bec57b63861",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "e550746a-9453-4844-8bb5-f0a1d09d683f",
+			"id": "f1693392-bd29-40f8-8ce6-5932394d6762",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
