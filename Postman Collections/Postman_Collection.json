@@ -121,6 +121,7 @@
 							"pm.expect(book).to.be.an('object');\r",
 							"pm.expect(book.available).to.be.true;\r",
 							"pm.expect(book.available).to.eql(true);\r",
+							"pm.expect(book.type).to.eql(\"non-fiction\");\r",
 							"});\r",
 							"\r",
 							"pm.globals.set(\"bookId\", book.id);\r",
@@ -138,7 +139,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/books?type=non-fiction",
+					"raw": "{{baseUrl}}/books",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -149,7 +150,7 @@
 						{
 							"key": "type",
 							"value": "non-fiction",
-							"type": "text"
+							"disabled": true
 						}
 					]
 				}
@@ -510,12 +511,12 @@
 	],
 	"variable": [
 		{
-			"id": "6a76b037-a50f-477d-a5e8-33d18b6d2f25",
+			"id": "1c11f724-231a-4ba5-89a9-5570acf795da",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "1418c5db-d073-44ef-adac-1c4c9f8bc39c",
+			"id": "a35ee498-cd5c-4e2c-8750-005d91cf372b",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
