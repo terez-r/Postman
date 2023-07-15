@@ -52,13 +52,70 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"const nonFictionBooks = response.filter((book) => book.available === true);\r",
+							"\r",
+							"const book = nonFictionBooks[0];\r",
+							"\r",
+							"pm.test(\"Book found\", () => {\r",
+							"pm.expect(book).to.be.an('object');\r",
+							"pm.expect(book.available).to.be.true;\r",
+							"pm.expect(book.available).to.eql(true);\r",
+							"});\r",
+							"\r",
+							"pm.globals.set(\"bookId\", book.id);\r",
+							""
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
 			"id": "a74d5c98-f42a-4aa9-af8c-147fac5c0d95",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books?type=non-fiction",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "non-fiction",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request_2_books Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dd7ff427-c511-4650-afbd-5b40fe116116",
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a17d3936-abad-4aff-bb71-831fb2461bc5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -423,12 +480,12 @@
 	],
 	"variable": [
 		{
-			"id": "ba2d5644-c4ec-489b-8491-b9477c30f6e7",
+			"id": "bb580cdc-924a-4919-a53b-f1a5c0526d1d",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "d34840c6-edba-4c96-b556-cd0b77a3d502",
+			"id": "fa93cff9-e614-496c-b191-bdf59386eac3",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
