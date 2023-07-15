@@ -100,6 +100,63 @@
 			"response": []
 		},
 		{
+			"name": "Request_2.1_books list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dd7ff427-c511-4650-afbd-5b40fe116116",
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"const nonFictionBooks = response.filter((book) => book.available === true);\r",
+							"\r",
+							"const book = nonFictionBooks[0];\r",
+							"\r",
+							"pm.test(\"Book found\", () => {\r",
+							"pm.expect(book).to.be.an('object');\r",
+							"pm.expect(book.available).to.be.true;\r",
+							"pm.expect(book.available).to.eql(true);\r",
+							"});\r",
+							"\r",
+							"pm.globals.set(\"bookId\", book.id);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "bc79c7c2-278a-4091-ba1e-6843e9f2aa5d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books?type=non-fiction",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "non-fiction",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Request_3_single book",
 			"event": [
 				{
@@ -453,12 +510,12 @@
 	],
 	"variable": [
 		{
-			"id": "cfd0c914-52ae-4591-b632-2389de69a6d3",
+			"id": "6a76b037-a50f-477d-a5e8-33d18b6d2f25",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "bcc03679-ada2-48bb-8983-e49adc1e0faf",
+			"id": "1418c5db-d073-44ef-adac-1c4c9f8bc39c",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
