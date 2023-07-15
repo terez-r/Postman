@@ -223,6 +223,20 @@
 		},
 		{
 			"name": "Request_7_GET one book order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "944b975b-25db-41fa-aa01-c08276a42432",
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f4c1cff1-7590-4b08-b664-6b0198a0aa99",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -380,12 +394,12 @@
 	],
 	"variable": [
 		{
-			"id": "a483e3e0-cade-4085-83ea-c82dcf722d5e",
+			"id": "1ee8ca65-e745-4bc7-8e57-365363587d98",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "992471d6-785a-4426-9592-3ec430405677",
+			"id": "93f848a2-ec8a-4efd-b060-176974c43451",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
