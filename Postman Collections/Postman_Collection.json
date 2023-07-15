@@ -43,7 +43,7 @@
 			"response": []
 		},
 		{
-			"name": "Request_2_books",
+			"name": "Request_2_books list",
 			"event": [
 				{
 					"listen": "test",
@@ -480,12 +480,12 @@
 	],
 	"variable": [
 		{
-			"id": "ab21d0b9-561e-4d7e-81d6-89042adfd52e",
+			"id": "3b9a92b3-e27d-4646-b9a0-f7bc8c8fd41c",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "18829c21-d7ad-406e-b4d1-1b0ec10bc547",
+			"id": "c18b868e-7242-499e-a4ee-1ac181884d43",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
