@@ -142,7 +142,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Tereza\",\r\n   \"clientEmail\": \"terez@example.com\"\r\n}",
+					"raw": "{\r\n   \"bookId\": \"3\",\r\n   \"clientEmail\": \"terez@example.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -399,12 +399,12 @@
 	],
 	"variable": [
 		{
-			"id": "f7a2f3e1-1ca6-4f25-9a4b-18c85effdafe",
+			"id": "8757dee4-2481-42fd-9222-01874d6b91a7",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "9a23f58d-6ac1-42b4-8b57-adc953fe5c74",
+			"id": "25a2ab18-ef6f-49af-87e2-c9e0c1586bf7",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
