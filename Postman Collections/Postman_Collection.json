@@ -379,7 +379,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f3b319bd-699e-461e-8515-7a19d4befa1b",
+				"id": "b4aa9427-4f32-482c-9a33-28ab32896a99",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -389,7 +389,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "027dc5ff-b9b4-40bb-b6a2-e58dee0b346d",
+				"id": "2a0e4786-6a5e-4360-959f-00c0e688e6b2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -399,12 +399,12 @@
 	],
 	"variable": [
 		{
-			"id": "ed9dd979-07e4-4ef8-82d7-b6b06eb21cbf",
+			"id": "f7a2f3e1-1ca6-4f25-9a4b-18c85effdafe",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "de3111fc-465b-4001-b034-ca8b10cc0847",
+			"id": "9a23f58d-6ac1-42b4-8b57-adc953fe5c74",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
