@@ -263,22 +263,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/orders/:orderId",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"orders",
-						":orderId"
-					],
-					"variable": [
-						{
-							"key": "orderId",
-							"value": "ZmFf1XvUcb5WCrQwOhNRC"
-						}
-					]
-				}
+				"url": "{{baseUrl}}/orders/VRAz95M1_LPlDhWfMTv2A"
 			},
 			"response": []
 		},
@@ -399,12 +384,12 @@
 	],
 	"variable": [
 		{
-			"id": "8757dee4-2481-42fd-9222-01874d6b91a7",
+			"id": "319f9c69-e547-42bc-bedc-fdc191d5fed2",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "25a2ab18-ef6f-49af-87e2-c9e0c1586bf7",
+			"id": "28a8120f-f96f-43ab-9ff5-4de48d4b5bd0",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
