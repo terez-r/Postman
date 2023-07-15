@@ -210,32 +210,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Tereza\",\r\n   \"clientEmail\": \"tereza@example.com\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/orders?bookId=3&customerName=Tereza",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"orders"
-					],
-					"query": [
-						{
-							"key": "bookId",
-							"value": "3"
-						},
-						{
-							"key": "customerName",
-							"value": "Tereza"
-						}
-					]
-				}
+				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
 		},
@@ -398,12 +380,12 @@
 	],
 	"variable": [
 		{
-			"id": "2db1775d-413e-4524-8cb9-78d169d06483",
+			"id": "a483e3e0-cade-4085-83ea-c82dcf722d5e",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "a8f6b599-331c-4d4e-a8ab-1923eae27002",
+			"id": "992471d6-785a-4426-9592-3ec430405677",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
