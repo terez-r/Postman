@@ -208,6 +208,12 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Is in stock\", () => {\r",
+							"    pm.expect(response['current-stock']).to.be.above(0);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -232,9 +238,8 @@
 					],
 					"variable": [
 						{
-							"id": "8584de6f-b86e-474e-9b60-1b004d9752b2",
 							"key": "bookId",
-							"value": "1"
+							"value": "{{bookId}}"
 						}
 					]
 				}
@@ -553,12 +558,12 @@
 	],
 	"variable": [
 		{
-			"id": "71661ccc-3e9a-4d53-8072-5feab16e320a",
+			"id": "9313609c-adda-498f-b189-56dbdee5fd02",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "678315e2-3dd7-42e6-a09f-82c1253962ee",
+			"id": "de9b9fe1-91a4-4e23-a0b1-66d14776268c",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
