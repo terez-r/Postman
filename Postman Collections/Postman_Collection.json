@@ -342,7 +342,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "VRAz95M1_LPlDhWfMTv2A"
+							"value": "{{orderId}}"
 						}
 					]
 				}
@@ -423,12 +423,12 @@
 	],
 	"variable": [
 		{
-			"id": "1940d223-5fb9-4332-9e7c-6bec57b63861",
+			"id": "ba2d5644-c4ec-489b-8491-b9477c30f6e7",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "f1693392-bd29-40f8-8ce6-5932394d6762",
+			"id": "d34840c6-edba-4c96-b556-cd0b77a3d502",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
