@@ -350,7 +350,7 @@
 			"response": []
 		},
 		{
-			"name": "Request_8_update order_PATCH",
+			"name": "Request_8_update order",
 			"event": [
 				{
 					"listen": "test",
@@ -480,12 +480,12 @@
 	],
 	"variable": [
 		{
-			"id": "39a4a2b7-4154-4a23-b733-622fcccebdcf",
+			"id": "72b72351-49f7-4629-b23c-417560cb2d87",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "9d73c763-1c76-4603-a1fe-f01ac4184f5c",
+			"id": "7af550c1-f6e5-4f30-8ab5-fba69c2e4af0",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
