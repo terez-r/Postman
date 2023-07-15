@@ -169,7 +169,7 @@
 			"response": []
 		},
 		{
-			"name": "Request_4_order-book_POST",
+			"name": "Request_4_order-book",
 			"event": [
 				{
 					"listen": "test",
@@ -480,12 +480,12 @@
 	],
 	"variable": [
 		{
-			"id": "3b9a92b3-e27d-4646-b9a0-f7bc8c8fd41c",
+			"id": "39a4a2b7-4154-4a23-b733-622fcccebdcf",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "c18b868e-7242-499e-a4ee-1ac181884d43",
+			"id": "9d73c763-1c76-4603-a1fe-f01ac4184f5c",
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
